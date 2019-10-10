@@ -141,6 +141,160 @@ while True:
         #
 
         materiaC5 = Materia("Inteligencia Artificial I", 3, 5, "Programacion Funcional")
+        # Demas materias del semestre 5 semestre
+        materiaA5 = Materia("Sistemas de Informacion II", 19, 5, "Sistemas de Informacion I")
+        materiaB5 = Materia("Graficacion por computacion", 19, 5, "Algoritmos Avanzados")
+        materiaD5 = Materia("Taller de Sistemas operativo", 19, 5, "Taller de programacion de bajo nivel")
+        materiaE5 = Materia("Teoria de automatas y lenguajes formales", 18, 5, "Taller de programacion de bajo nivel")
+        materiaF5 = Materia("Base de Datos II", 19, 5, "Base de Datos")
+        #
+
+        materiaC6 = Materia("Inteligencia Artificial II", 19, 6, "Inteligencia Artificial I")
+        # Demas materias del semestre 6 semestre
+        materiaA6 = Materia("Ingenieria de Software", 19, 6, "Sistemas de Informacion II")
+        materiaB6 = Materia("Programacion web", 19, 6, "Graficacion por computacion")
+        materiaD6 = Materia("Redes de computadoras", 17, 6, "Taller de Sistemas operativo")
+        materiaE6 = Materia("Estructura y semantica de lenguajes de programacion", 19, 6,
+                            "Teoria de automatas y lenguajes formales")
+        materiaF6 = Materia("Taller de base de Datos", 19, 6, "Base de Datos II")
+        #
+
+        materiaC7 = Materia("Interacion Humano computador", 1, 7, "Inteligencia Artificial II")
+        # Demas materias del semestre 7 semestre
+        materiaA7 = Materia("Taller de Ingeniera de software", 20, 7, "Ingenieria de Software")
+        materiaB7 = Materia("Arquitectura de software", 20, 7, "Programacion web")
+        materiaD7 = Materia("Tecnologia y redes avanzadas", 0, 7, "Redes de computadoras")
+        materiaE7 = Materia("Electiva Teoria de computacion", 20, 7,
+                            "Estructura y semantica de lenguajes de programacion")
+        materiaF7 = Materia("Electiva base de Datos", 20, 7, "Taller de base de Datos")
+        #
+        materiaC8 = Materia("Electiva Inteligenci Artificial", 20, 8, "Interacion Humano computador")
+        # Demas materias del semestre 8  semestre
+        materiaA8 = Materia("Taller de grado", 21, 8, "Taller de Ingeniera de software")
+        materiaB8 = Materia("Evaluacion y auditoria de sistemas", 21, 8, "Arquitectura de software")
+        materiaD8 = Materia("Electiva de redes", 20, 8, "Tecnologia y redes avanzadas")
+        materiaE8 = Materia("Electiva Teoria de computacion II", 21, 8, "Electiva Teoria de computacion")
+        materiaF8 = Materia("Electiva base de Datos II", 21, 8, "Electiva base de Datos")
+        #
+        materiaA9 = Materia("Modalidad de titulacion", 21, 9, "Taller de grado")
+
+        raiz.agregarNodo(materiaA1)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaB1)
+        raiz.agregarNodo(materiaC1)
+        raiz.agregarNodo(materiaD1)
+        raiz.agregarNodo(materiaE1)
+
+        raiz.agregarNodo(materiaA2)
+        raiz.agregarNodo(materiaB2)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaC2)
+        raiz.agregarNodo(materiaD2)
+        raiz.agregarNodo(materiaE2)
+        raiz.agregarNodo(materiaF2)
+
+        raiz.agregarNodo(materiaA3)
+        raiz.agregarNodo(materiaB3)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaC3)
+        raiz.agregarNodo(materiaD3)
+        raiz.agregarNodo(materiaE3)
+        raiz.agregarNodo(materiaF3)
+
+        raiz.agregarNodo(materiaA4)
+        raiz.agregarNodo(materiaB4)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaC4)
+        raiz.agregarNodo(materiaD4)
+        raiz.agregarNodo(materiaE4)
+        raiz.agregarNodo(materiaF4)
+
+        raiz.agregarNodo(materiaA5)
+        raiz.agregarNodo(materiaB5)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaC5)
+        raiz.agregarNodo(materiaD5)
+        raiz.agregarNodo(materiaE5)
+        raiz.agregarNodo(materiaF5)
+
+        raiz.agregarNodo(materiaA6)
+        raiz.agregarNodo(materiaB6)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaC6)
+        raiz.agregarNodo(materiaD6)
+        raiz.agregarNodo(materiaE6)
+        raiz.agregarNodo(materiaF6)
+
+        raiz.agregarNodo(materiaA7)
+        raiz.agregarNodo(materiaB7)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaC7)
+        raiz.agregarNodo(materiaD7)
+        raiz.agregarNodo(materiaE7)
+        raiz.agregarNodo(materiaF7)
+
+        raiz.agregarNodo(materiaA8)
+        raiz.agregarNodo(materiaB8)
+        # Agregar  las demas ameteria
+        raiz.agregarNodo(materiaC8)
+        raiz.agregarNodo(materiaD8)
+        raiz.agregarNodo(materiaE8)
+        raiz.agregarNodo(materiaF8)
+
+        raiz.agregarNodo(materiaA9)
+
+        colaDePrioridad = ColaPrioridad()
+        camino = "Ingenieria Informatica"
+        camino += busquedaAvara(raiz, "", colaDePrioridad)
+
+        print(camino)
+        #==================================================================
+        print("")
+        input("pulsa una tecla para continuar")
+
+    elif opcionMenu == "2":
+
+
+# elemento raiz
+        raiz = Materia("Ingenieria Informatica", 25, 0)
+        materiaB1 = Materia("Algebra I", 7, 1, "Ingenieria Informatica")
+        # Demas materias del semestre 1 semestre
+        materiaA1 = Materia("Introduccion a la programacion", 15, 1, "Ingenieria Informatica")
+        materiaC1 = Materia("Calculo I", 15, 1, "Ingenieria Informatica")
+        materiaD1 = Materia("Ingles I", 15, 1, "Ingenieria Informatica")
+        materiaE1 = Materia("Fisica", 14, 1, "Ingenieria Informatica")
+        #
+
+        materiaC2 = Materia("Algebra II", 6, 2, "Algebra I")
+        # Demas materias del semestre 2 semestre
+        materiaA2 = Materia("Elementos de programacion y Estructura de datos", 16, 2, "Introduccion a la programacion")
+        materiaB2 = Materia("Programacion", 16, 2, "Introduccion a la programacion")
+        materiaD2 = Materia("Calculo II", 16, 2, "Calculo I")
+        materiaE2 = Materia("Ingles II", 16, 2, "Ingles I")
+        materiaF2 = Materia("Arquitectura por computadoras I", 16, 2, "Fisica")
+        #
+
+        materiaC3 = Materia("Logica", 5, 3, "Algebra II")
+        # Demas materias del semestre 3 semestre
+        materiaA3 = Materia("Metodos y tecnicas de programacion", 17, 3,
+                            "Elementos de programacion y Estructura de datos")
+        materiaB3 = Materia("Teoria de grafos", 17, 3, "Programacion")
+        materiaD3 = Materia("Calculo Numerico", 17, 3, "Calculo II")
+        materiaE3 = Materia("Organizacion y metodos", 17, 3, "Ingles II")
+        materiaF3 = Materia("Arquitectura por computadoras II", 17, 3, "Arquitectura por computadoras I")
+        #
+
+        materiaC4 = Materia("Programacion Funcional", 4, 4, "Logica")
+        # Demas materias del semestre 4 semestre
+        materiaA4 = Materia("Sistemas de Informacion I", 18, 4, "Metodos y tecnicas de programacion")
+        materiaB4 = Materia("Algoritmos Avanzados", 18, 4, "Teoria de grafos")
+        materiaC4 = Materia("Programacion Funcional", 18, 4, "Logica")
+        materiaD4 = Materia("Probabilidad y estadistica", 18, 4, "Calculo Numerico")
+        materiaE4 = Materia("Taller de programacion de bajo nivel", 18, 4, "Arquitectura por computadoras II")
+        materiaF4 = Materia("Base de Datos", 18, 4, "Organizacion y metodos")
+        #
+
+        materiaC5 = Materia("Inteligencia Artificial I", 3, 5, "Programacion Funcional")
         # Demas materias del semestre 4 semestre
         materiaA5 = Materia("Sistemas de Informacion II", 19, 5, "Sistemas de Informacion I")
         materiaB5 = Materia("Graficacion por computacion", 19, 5, "Algoritmos Avanzados")
@@ -249,10 +403,7 @@ while True:
 
         print(camino)
         #==================================================================
-        print("")
-        input("pulsa una tecla para continuar")
 
-    elif opcionMenu == "2":
         print("")
         input("Has pulsado la opción 2...\npulsa una tecla para continuar")
     elif opcionMenu == "3":
